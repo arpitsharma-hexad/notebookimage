@@ -1,7 +1,5 @@
 FROM registry.hub.docker.com/library/ubuntu:latest
 
-ENV http_proxy $HTTP_PROXY
-ENV https_proxy $HTTPS_PROXY
 
 RUN apt-get update && apt-get install -y \
     software-properties-common
