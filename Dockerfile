@@ -1,7 +1,7 @@
 FROM registry.hub.docker.com/library/ubuntu:latest
 
-RUN echo "Acquire::http::proxy “${HTTP_PROXY}”;" >> /etc/apt/apt.conf
-RUN echo "Acquire::https::proxy “${HTTPS_PROXY}”;" >> /etc/apt/apt.conf
+ENV http_proxy $HTTP_PROXY
+ENV https_proxy $HTTPS_PROXY
 
 RUN apt-get update && apt-get install -y \
     software-properties-common
