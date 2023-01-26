@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM registry.hub.docker.com/library/ubuntu:latest
 
 USER root
 
