@@ -31,14 +31,10 @@ RUN curl -L https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/sta
 
 RUN chmod +x /jupyter/start-notebook.sh
 
-RUN mkdir /.cache
-RUN chmod -R g+rwx /.cache
-RUN mkdir /.jupyter
-RUN chmod -R g+rwx /.jupyter
-RUN mkdir /.local
-RUN chmod -R g+rwx /.local
-RUN mkdir /.virtual_documents
-RUN chmod -R g+rwx /.virtual_documents
+RUN mkdir /.cache && chmod -R g+rwx /.cache
+RUN mkdir /.jupyter && chmod -R g+rwx /.jupyter
+RUN mkdir /.local && chmod -R g+rwx /.local
+RUN mkdir /.virtual_documents && chmod -R g+rwx /.virtual_documents
 RUN chmod -R g+rwx /jupyter && chmod -R g+rwx /usr/lib
 
 USER 1001
