@@ -39,6 +39,7 @@ RUN mkdir /.local
 RUN chmod -R g+rwx /.local
 RUN mkdir /.virtual_documents
 RUN chmod -R g+rwx /.virtual_documents
+RUN chmod -R g=+rwx /jupyter
 
 USER 1001
 
