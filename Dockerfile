@@ -39,8 +39,6 @@ RUN mkdir /.local
 RUN chmod -R g+rwx /.local
 RUN mkdir /.virtual_documents
 RUN chmod -R g+rwx /.virtual_documents
-#RUN chmod -R g=u /usr/lib/
-#RUN chmod -R g=u /jupyter
 RUN chmod -R g+rwx /usr
 RUN chmod -R g+rwx /opt
 RUN chmod -R g+rwx /lib
