@@ -6,4 +6,4 @@ RUN INSTALL_PKGS="java-11-openjdk java-11-openjdk-devel" && \
 
 USER 1001
 
-ENTRYPOINT ["/jupyter/start-notebook.sh"]
+ENTRYPOINT ["start-notebook.sh"]
